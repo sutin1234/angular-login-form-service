@@ -1,0 +1,21 @@
+<div class="form">
+    <div class="form-login">
+        <mat-form-field appearance="outline">
+            <mat-label>Please Enter username </mat-label>
+            <input matInput placeholder="Placeholder" [(ngModel)]="userLogin.username">
+            <mat-icon matSuffix>supervisor_account</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="form-login">
+        <mat-form-field appearance="outline">
+            <mat-label>Please Enter email </mat-label>
+            <input matInput placeholder="Placeholder" [(ngModel)]="userLogin.password">
+            <mat-icon matSuffix>mail_outline</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="example-button-row">
+        <button mat-raised-button color="primary" (click)="login()">Login</button>
+        <button mat-raised-button color="primary" (click)="getHttp()">Get HttpClient</button>
+        <button mat-raised-button color="primary" (click)="getRxAjax()">Post RxAjax</button>
+    </div>
+</div>
